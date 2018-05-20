@@ -10,7 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
-gem 'bootstrap', '~> 4.1', '>= 4.1.1'
+
 gem 'sass-rails', '~> 5.0'
 gem 'sprockets', '~> 4.0.0.beta7'
 # Use Uglifier as compressor for JavaScript assets
@@ -28,7 +28,6 @@ gem 'jquery-rails'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
-gem 'devise'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use ActiveStorage variant
@@ -52,6 +51,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'bootstrap_v3', '~> 0.1'
+  gem 'devise', '~> 4.4', '>= 4.4.3'
 end
 
 group :test do
