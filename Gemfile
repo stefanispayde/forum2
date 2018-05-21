@@ -10,6 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'sprockets', '~> 4.0.0.beta7'
 # Use Uglifier as compressor for JavaScript assets
@@ -51,8 +52,8 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'bootstrap_v3', '~> 0.1'
+  gem 'bootstrap_form'
   gem 'devise', '~> 4.4', '>= 4.4.3'
-  # gem 'bootstrap_form'
 end
 
 group :test do
