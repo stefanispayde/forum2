@@ -1,26 +1,39 @@
 
+<div class='container' id='sign-up-form'>
+  <div class='row'>
 
-<%= bootstrap_form_for(resource,
-                        :as resource_name,
-                        :url registration_path(resource_name)) do |f| %>
+    <h1>Join our community and stop fighting alone.</h1>
+    <h2>We're glad you're here.</h2>
 
-    <%= f.text_field :name,
-                      placeholder: 'username (will be shown publicly)',
-                      class: 'form-control' %>
+    <div class='col-sm-offset-4 col-sm-4'>
+      <h3>Register</h3>
+      <p>
+        Once you are successfully registered, click the 'Introduce Yourself'
+        button and submit your first post with your special story. We encourage
+        you to be as open as you care to be. This is your space!
+      </p>
+       
+      <%= bootstrap_form_for(resource,
+                              :as resource_name,
+                              :url registration_path(resource_name)) do |f| %>
 
-    <%= f.text_field :email,
-                      placeholder: 'email',
-                      class: 'form-control' %>
+          <%= f.text_field :name,
+                            placeholder: 'username (will be shown publicly)',
+                            class: 'form-control' %>
 
-    <%= f.text_field :password,
-                      placeholder: 'password',
-                      class: 'form-control' %>
+          <%= f.text_field :email,
+                            placeholder: 'email',
+                            class: 'form-control' %>
+
+          <%= f.text_field :password,
+                            placeholder: 'password',
+                            class: 'form-control' %>
 
 
-    <%= f.text_field :password_confirmation,
-                      placeholder: 'password confirmation',
-                      class: 'form-control' %>
+          <%= f.text_field :password_confirmation,
+                            placeholder: 'password confirmation',
+                            class: 'form-control' %>
 
-    <%= f.submit "Sign up", class: 'btn sign-up-button' %>
+          <%= f.submit "Sign up", class: 'btn sign-up-button' %>
 
 <% end %>
