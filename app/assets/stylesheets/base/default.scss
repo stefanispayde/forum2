@@ -4,10 +4,15 @@
 
 html {
   font-size: 62.5%;
+  background: url('https://br.freepik.com/vetores-gratis/projeto-de-fundo-de-mosaico-de-triangulo-abstrato_1258560.htm') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
-  background: $backgroundColor;
+  // background: $backgroundColor;
   font-size: 14px;
   font-size: 1.4rem;
 }
