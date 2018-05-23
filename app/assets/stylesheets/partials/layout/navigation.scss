@@ -5,6 +5,8 @@
   border: none;
   a {
     color: white !important;
+    font-size: 25px;
+    margin-top: 80px;
   }
   .col-sm-5, .col-sm-7 {
   padding: 0;
@@ -13,7 +15,7 @@
 nav {
   .navbar-header {
     width: 100%;
-    height: 100px;
+    height: 125px;
     button, .navbar-brand {
       transition: opacity 0.15s;
       font-size: 40px;

@@ -1,12 +1,12 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 require "capybara/poltergeist"
-require "factory_girl_rails"
+require "factory_bot_rails"
 require "capybara/rspec"
-require 'spec_helper'
+require 'rails_helper'
 
 config.include Devise::Test::IntegrationHelpers, type: :feature
-config.include FactoryGirl::Suntax::Methods
-Capaybara.javascript_driver = :poltergeist
+config.include FactoryBot::Syntax::Methods
+Capybara.javascript_driver = :poltergeist
 Capybara.server = :puma
 
 ENV['RAILS_ENV'] ||= 'test'
@@ -52,11 +52,15 @@ RSpec.configure do |config|
     DatabaseCleaner.strategy = :transaction
   end
 
+  config.before(:each, :js => true) do
+    DatabaseCleaner.strategy = :truncation
+  end
+
   config.before(:each) do
     DatabaseCleaner.start
   end
 
-  config.before(:each) do
+  config.after(:each) do
     DatabaseCleaner.clean
   end
 
