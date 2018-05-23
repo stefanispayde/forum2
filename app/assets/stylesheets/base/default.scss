@@ -3,13 +3,20 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 66.5%;
+  background: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/technical-background-images-for-websites-3.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 body {
-  background: $backgroundColor;
+  background: transparent;
   font-size: 14px;
   font-size: 1.4rem;
+
 }
 
 h1 {
