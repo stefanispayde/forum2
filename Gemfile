@@ -62,6 +62,7 @@ group :test do
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
   gem 'headless', '~> 2.3', '>= 2.3.1'
   gem 'poltergeist', '~> 1.18'
+  gem 'phantomjs', '~> 2.1', '>= 2.1.1.0'
   gem 'database_cleaner', '~> 1.7'
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15', '< 4.0'
