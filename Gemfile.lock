@@ -271,7 +271,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   database_cleaner (~> 1.7)
   devise (~> 4.4, >= 4.4.3)
-  factory_bot_rails
+  factory_bot_rails (~> 4.0)
   headless (~> 2.3, >= 2.3.1)
   jbuilder (~> 2.5)
   jquery-rails

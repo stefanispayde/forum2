@@ -58,7 +58,7 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", "~> 4.0"
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.2'
   gem 'headless', '~> 2.3', '>= 2.3.1'
   gem 'poltergeist', '~> 1.18'
