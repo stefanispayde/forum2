@@ -3,8 +3,8 @@ require "capybara/poltergeist"
 require "factory_bot_rails"
 require "capybara/rspec"
 require 'rails_helper'
+require 'support/factory_bot'
 
-config.include Devise::Test::IntegrationHelpers, type: :feature
 
 
 # config.include FactoryBot::Syntax::Methods
@@ -30,16 +30,19 @@ require 'rspec/rails'
 # of increasing the boot-up time by auto-requiring all files in the support
 # directory. Alternatively, in the individual `*_spec.rb` files, manually
 # require only the support files necessary.
+config.include Devise::Test::IntegrationHelpers, type: :feature
+
+
 #
-# Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
+Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # Checks for pending migrations and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
-RSpec.configure do |config|
-  config.include FactoryBot::Syntax::Methods
-end
+# RSpec.configure do |config|
+#   config.include FactoryBot::Syntax::Methods
+# end
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
 
@@ -88,4 +91,4 @@ end
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
-end
+# end
