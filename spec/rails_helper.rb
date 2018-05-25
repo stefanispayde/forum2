@@ -5,9 +5,9 @@ require "capybara/rspec"
 require 'rails_helper'
 require 'support/factory_bot'
 
+config.include Devise::Test::IntegrationHelpers, type: :feature
 
 
-# config.include FactoryBot::Syntax::Methods
 Capybara.javascript_driver = :poltergeist
 Capybara.server = :puma
 

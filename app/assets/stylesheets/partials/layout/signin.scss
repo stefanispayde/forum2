@@ -1,3 +1,15 @@
-#sign-in-form {
-  
+form#new_user.new_user {
+  margin-top: 50px;
+
+  .control-label {
+    display: none;
+  }
+
+  h2.text-center {
+    color: $bodyTextColor !important;
+    font-size: 35px;
+    margin-top: 60px !important;
+
+  }
+
 }
