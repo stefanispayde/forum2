@@ -2,21 +2,22 @@
 
 .navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
   background: $navbarColor !important;
+  opacity: 0.9;
   border: none;
   a {
     color: white !important;
     font-size: 25px;
     margin-top: 80px;
-    margin-right: 0;
   }
   .col-sm-5, .col-sm-7 {
   padding: 0;
   }
 }
 a.navbar-brand {
-  font-size: 50px !important;
+  font-family: 'Raleway', sans-serif;
+  font-size: 60px !important;
   margin-top: 45px !important;
-  margin-left: -60px !important;
+  margin-left: -250px !important;
   color: white;
 }
 nav {

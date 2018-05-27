@@ -1,19 +1,41 @@
+
+// @font-face {
+//     font-family: 'Quicksand';
+//     src: url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700') format('truetype');
+// }
+
+// @font-face {
+//     font-family: 'Railway';
+//     src: url('https://fonts.googleapis.com/css?family=Raleway') format('truetype');
+// }
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+
+
+
 * {
   box-sizing: border-box;
 }
 
-html {
-  // font-size: 66.5%;
-  background: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/technical-background-images-for-websites-3.jpg') no-repeat center center fixed;
+// html {
+//   // font-size: 66.5%;
+//   // background: url('http://backgroundcheckall.com/wp-content/uploads/2017/12/technical-background-images-for-websites-3.jpg') no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//
+// }
+
+body {
+  background: transparent;
+  background: url("ink.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
-}
-
-body {
-  background: transparent;
   font-size: 20px;
   font-size: 2.0rem;
 
